@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        #table1 {
+            border-collapse: separate;
+            border-spacing: 2px;
+            margin: 50px;
+            border: 2px solid black;
+        }
+
+        #table1 th,
+        #table1 td {
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        #table1 th {
+            font-weight: bold;
+        }
+
+        #table3 body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #table4,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        #table5,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        #table6 {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        td {
+            border: 2px solid rgba(41, 46, 56, 0.767);
+        }
+
+        #table7 {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        #table7 td {
+            border: 2px solid green;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            width: 80px;
+            height: 50px;
+        }
+
+        #table7 h2 {
+            text-align: center;
+        }
+
+        td {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            width: 80px;
+            height: 50px;
+        }
+
+        /* bütün cədvəllər ortada olacaq */
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="table1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Harry Depp</td>
+            <td>28</td>
+            <td>Britain</td>
+        </tr>
+        <tr>
+            <td>John Smith</td>
+            <td>35</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Ram Krishna</td>
+            <td>19</td>
+            <td>Nepal</td>
+        </tr>
+    </table>
+
+
+    <table id="table2" border="1">
+        <tr>
+            <td>Product</td>
+            <td>Quantity</td>
+        </tr>
+        <tr>
+            <td>Butter</td>
+            <td>3 Kilogram</td>
+        </tr>
+        <tr>
+            <td>Milk</td>
+            <td>3 Liters</td>
+        </tr>
+    </table>
+
+
+    <table id="table3" border="1"> <center>Product Info</center>
+        <tr>
+            <td>Product</td>
+            <td>Flavors</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Milk</td>
+            <td>Almond</td>
+        </tr>
+        <tr>
+            <td>Mango</td>
+        </tr>
+        <tr>
+            <td>Chocolate</td>
+        </tr>
+        <tr>
+            <td colspan="2">There are exclusive flavors</td>
+        </tr>
+    </table>
+
+
+    <table id="table4" border="1">
+        <tr>
+            <td rowspan="6">section</td>
+            <td rowspan="3" colspan="2">subsection 1</td>
+            <td colspan="4">text 1</td>
+        </tr>
+        <tr>
+            <td colspan="4">text 2</td>
+        </tr>
+        <tr>
+            <td colspan="4">text 3</td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2">subsection 2</td>
+            </td>
+            <td colspan="4">text 4</td>
+        </tr>
+        <tr>
+            <td colspan="4">text 5</td>
+        </tr>
+        <tr>
+            <td colspan="2">subsection 3</td>
+            <td colspan="4">text 6</td>
+        </tr>
+    </table>
+
+    <table id="table5" border="1">
+        <tr>
+            <td>1</td>
+            <td rowspan="2">2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+
+    <table id="table6" border="1">
+        <tr>
+            <td colspan="7">
+                <center>Product</center>
+            </td>
+        </tr>
+        <tr>
+            <td>No</td>
+            <td colspan="3">P.Name</td>
+            <td colspan="3">P.Count</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td colspan="3">Pen</td>
+            <td colspan="3" rowspan="3">
+                <center>50</center>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td colspan="3">Book</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td colspan="3">Dust</td>
+        </tr>
+    </table>
+
+    <center>
+        <h2>Table in HTML</h2>
+    </center>
+    <table id="table7">
+        <tr>
+            <td rowspan="2">A</td>
+            <td>B</td>
+            <td rowspan="3">D</td>
+            <td colspan="2">E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td rowspan="2">G</td>
+            <td rowspan="2">H</td>
+            <td rowspan="2">I</td>
+        </tr>
+        <tr>
+            <td colspan="2">J</td>
+        </tr>
+        <tr>
+            <td colspan="3">K</td>
+            <td>L</td>
+            <td colspan="2">M</td>
+        </tr>
+    </table>
+</body>
+
+</html>
